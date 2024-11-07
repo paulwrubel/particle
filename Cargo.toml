@@ -1,0 +1,17 @@
+[package]
+name = "particle"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+winit = { version = "0.29", default_features = false, features = [
+    "x11", 
+    "rwh_05",
+    "rwh_06",
+] }
+env_logger = "0.10"
+log = "0.4"
+wgpu = "22.0"
+pollster = "0.3"
